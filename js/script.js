@@ -14,3 +14,28 @@ header__list.onclick = function () {
     header__list.classList.remove('active');
     back.classList.toggle('lock');
 }
+
+if ($('.slider_body').length > 0){
+    $('.slider_body').slick({
+        dots: false,
+        arrows: true,
+        slidesToShow:3,
+        autoplaySpeed:3000,
+        adaptiveHeight: true,
+        nextArrow: '<button type="button" class = "slick-next" ></button>',
+        prevArrow: '<button type="button" class = "slick-prev" ></button>',
+        responsive:[{
+            breakpoint:1200,
+            settings:{
+                slidesToShow:2,
+            }
+        },{
+            breakpoint:886,
+            settings:{
+                slidesToShow:1,
+            }
+        }
+        
+    ]
+    })
+}
