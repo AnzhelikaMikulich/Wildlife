@@ -14,28 +14,26 @@ header__list.onclick = function () {
     header__list.classList.remove('active');
     back.classList.toggle('lock');
 }
+//СЛАЙДЕР
+let ofset = 0;
+const slider_body = document.querySelector('.slider_body');
+const slider_next = document.querySelector('.slider_next');
+const slider_prev = document.querySelector('.slider_prev');
 
-if ($('.slider_body').length > 0){
-    $('.slider_body').slick({
-        dots: false,
-        arrows: true,
-        slidesToShow:3,
-        autoplaySpeed:3000,
-        adaptiveHeight: true,
-        nextArrow: '<button type="button" class = "slick-next" ></button>',
-        prevArrow: '<button type="button" class = "slick-prev" ></button>',
-        responsive:[{
-            breakpoint:1200,
-            settings:{
-                slidesToShow:2,
-            }
-        },{
-            breakpoint:886,
-            settings:{
-                slidesToShow:1,
-            }
-        }
-        
-    ]
-    })
-}
+
+slider_next.addEventListener('click',function() {
+    ofset = ofset + 360;
+    if(ofset > 1180){
+        ofset = 0
+    }
+    slider_body.style.left = -ofset + 'px'
+
+})
+slider_prev.addEventListener('click',function() {
+    ofset = ofset - 360;
+    if(ofset < 0){
+        ofset = 1180
+    }
+    slider_body.style.left = -ofset + 'px'
+    
+})
