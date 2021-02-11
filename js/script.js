@@ -32,7 +32,7 @@ slider_next.addEventListener('click',function() {
 slider_prev.addEventListener('click',function() {
     ofset = ofset - 360;
     if(ofset < 0){
-        ofset = 1180
+        ofset = 1080
     }
     slider_body.style.left = -ofset + 'px'
     

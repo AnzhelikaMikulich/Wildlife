@@ -29,26 +29,10 @@ body {
   font-family: Arial, sans-serif;
   height: 100%;
   width: 100%;
-  line-height: 1;
   font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-input,
-button,
-textarea {
-  font-family: inherit;
-}
-input::-ms-clear {
-  display: none;
 }
 button {
   cursor: pointer;
-}
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
 }
 a,
 a:visited {
@@ -71,7 +55,7 @@ ul li {
   overflow: hidden;
 }
 .container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 .visually-hidden {
@@ -118,11 +102,14 @@ ul li {
 }
 .menu_link:hover {
   color: #cd6326;
+  font-weight: bolder;
+  text-decoration: underline;
 }
 .menu_link img:hover {
   -webkit-transform: rotateZ(-20deg);
   -ms-transform: rotateZ(-20deg);
   transform: rotateZ(-20deg);
+  color: #cd6326;
 }
 .menu_btn {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -151,7 +138,6 @@ ul li {
   display: flex;
   z-index: 2;
 }
-
 .icon-menu {
   display: none;
 }
@@ -547,7 +533,6 @@ ul li {
   line-height: 27px;
   color: #f7f7f7;
 }
-
 @media (max-width: 1024px) {
   .get_notified_label {
     padding-top: 150px;
@@ -577,4 +562,161 @@ ul li {
   .get_notified_button {
     width: 20%;
   }
+}
+.footer {
+  background-color: #181617;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  position: relative;
+  /* align-items: center; */
+}
+.footer_bg img {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 50%;
+  transform: translate(-50%);
+}
+.footer_content {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer_logo {
+  display: flex;
+  padding: 0 120px 0 0;
+}
+
+.footer_menu {
+  display: flex;
+}
+.footer_name {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  padding: 0 0 0 16px;
+  font-size: 32px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
+.footer_list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.footer_list li {
+  list-style-type: none;
+  flex-basis: auto;
+  flex-grow: 1;
+  background: transparent;
+  text-align: center;
+}
+.footer_link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 60px;
+  color: #f7f7f7;
+  padding: 0 86px 0 0;
+  text-decoration: none;
+  display: block;
+}
+.last_ch {
+  padding: 0 84px 0 10px;
+}
+.footer_sotial_links {
+  display: flex;
+  padding: 0 0 0 44px;
+}
+.footer_sotial_links li {
+  padding: 0 26px 0 0;
+}
+.footer_sotial_links li a {
+  border-radius: 50%;
+}
+.facebook {
+  display: block;
+  background-image: url(../img/Footer/facebook.svg);
+  width: 40px;
+  height: 40px;
+}
+.instagramm {
+  display: block;
+  background-image: url(../img/Footer/instagramm.svg);
+  width: 40px;
+  height: 40px;
+}
+.pinterest {
+  display: block;
+  background-image: url(../img/Footer/pinterest.svg);
+  width: 40px;
+  height: 40px;
+}
+.twitter {
+  display: block;
+  background-image: url(../img/Footer/twitter.svg);
+  width: 40px;
+  height: 40px;
+}
+@media (max-width: 1200px) {
+  .footer_link {
+    padding: 0 55px 0 0;
+  }
+
+  .footer_logo {
+    padding: 0 60px 0 0;
+  }
+  .footer_sotial_links {
+    display: flex;
+    padding: 0 0 0 25px;
+  }
+}
+@media (max-width: 1020px) {
+  .footer_link {
+    padding: 0 25px 0 0;
+  }
+
+  .footer_logo {
+    padding: 0 30px 0 0;
+  }
+  .footer_sotial_links {
+    padding: 0 0 0 15px;
+  }
+}
+@media (max-width: 888px) {
+  .footer_link {
+    padding: 0 15px 0 0;
+  }
+
+  .footer_logo {
+    padding: 0 15px 0 0;
+  }
+  .footer_sotial_links {
+    padding: 0 0 0 10px;
+  }
+}
+@media (max-width: 825px) {
+  .footer_content {
+    position: absolute;
+    top: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer_sotial_links a:hover {
+  box-shadow: 0 15px 28px rgba(7, 218, 119, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.footer_list a:hover {
+  color: rgba(38, 240, 146, 0.61);
+  font-weight: bolder;
+  text-decoration: underline;
 }
