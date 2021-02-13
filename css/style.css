@@ -48,7 +48,7 @@ ul li {
   position: absolute;
   width: 100%;
   z-index: 50;
-  top: 20px;
+  top: 18px;
 }
 .wrapper {
   min-height: 100%;
@@ -59,13 +59,6 @@ ul li {
   margin: 0 auto;
 }
 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
 .header_row {
   display: flex;
   justify-content: space-between;
@@ -78,6 +71,10 @@ ul li {
   line-height: 60px;
   text-transform: uppercase;
   color: #f7f7f7;
+}
+.header_name_one {
+  font-style: normal;
+  font-weight: normal;
 }
 .menu_list {
   display: flex;
@@ -107,8 +104,7 @@ ul li {
   text-decoration: underline;
 }
 .menu_link img:hover {
-  transform: rotateZ(-20deg);
-  color: #cd6326;
+  transform: rotateZ(-40deg);
 }
 .menu_btn {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -124,6 +120,10 @@ ul li {
   border-radius: 5px;
   color: #f7f7f7;
   background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6px;
 }
 .menu_btn:hover {
   background: rgba(205, 99, 38, 1);
@@ -285,7 +285,9 @@ ul li {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 23px;
   line-height: 27px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #f7f7f7;
 }
 .survival_blok {
@@ -663,9 +665,9 @@ ul li {
   width: 40px;
   height: 40px;
 }
-.twitter {
+.telegramm {
   display: block;
-  background-image: url(../img/Footer/twitter.svg);
+  background-image: url(../img/Footer/telegramm.svg);
   width: 40px;
   height: 40px;
 }
@@ -719,11 +721,11 @@ ul li {
   }
 }
 .footer_sotial_links a:hover {
-  box-shadow: 0 15px 28px rgba(7, 218, 119, 0.25),
+  box-shadow: 0 15px 28px rgba(98, 223, 164, 0.5),
     0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .footer_list a:hover {
-  color: rgba(38, 240, 146, 0.61);
+  color: rgba(23, 199, 117, 0.438);
   font-weight: bolder;
   text-decoration: underline;
 }
