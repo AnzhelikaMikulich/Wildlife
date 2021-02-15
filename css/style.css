@@ -233,19 +233,19 @@ ul li {
   }
 }
 
-.survival_bg {
+.header_survival_bg {
   background-color: #02160b;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.survival_bg img {
+.header_survival_bg img {
   background-size: contain;
   position: relative;
   left: 50%;
   transform: translate(-50%);
 }
-.page {
+.header_survival_blok {
   width: 100%;
   min-height: 100%;
   display: flex;
